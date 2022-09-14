@@ -20,7 +20,7 @@
             <h2 class="blog-text-title">
               What is the difference between local storage and session storage?
             </h2>
-            <ol class="blog-text-content">
+            <ul class="blog-text-content">
               <li>
                 The Local storage capacity of local storage is 5MB/10MB. But the
                 Session storage capacity of session storage is 5MB.
@@ -34,27 +34,58 @@
                 In local and Session storage there is no transfer of data to the
                 server.
               </li>
-            </ol>
+            </ul>
           </div>
           <div class="card">
             <h2 class="blog-text-title">
               What is the difference between global scope and block scope?
             </h2>
-            <ol class="blog-text-content">
+            <ul class="blog-text-content">
               <li>
-                The Local storage capacity of local storage is 5MB/10MB. But the
-                Session storage capacity of session storage is 5MB.
+                The variables defined outside of any function or curly brackets
+                are known as global variables and have global scope. Global
+                scope means that the variables can be accessed from any part of
+                that program, and any function or conditional state can access
+                that variable. But Block scope is also a sub-type of local
+                scope. The block scope can be defined as the scope of the
+                variables inside the curly brackets {}. Now, these curly
+                brackets can be of loops, or conditional statements, or
+                something else. You are only allowed to refer to these variables
+                from within the curly brackets {}.
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2 class="blog-text-title">How javascript event loop works.</h2>
+            <ul class="blog-text-content">
+              <li>
+                The Event Loop has one simple job to monitor the Call Stack and
+                the Callback Queue. If the Call Stack is empty, the Event Loop
+                will take the first event from the queue and will push it to the
+                Call Stack, which effectively runs it. Such an iteration is
+                called a tick in the Event Loop. Each event is just a function
+                callback.
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2 class="blog-text-title">How can we get undefined?</h2>
+            <ul class="blog-text-content">
+              <li>Variable that is not initialized will give undefined.</li>
+              <li>Function with no return.</li>
+              <li>The parameter that is not passed will be undefined.</li>
+              <li>
+                If the return has nothing on the right side will return
+                undefined.
               </li>
               <li>
-                Their main difference is that local storage data does not
-                expire, whereas session storage data gets cleared when the user
-                closes its browser window.
+                Property that doesn't exist on an object will give you
+                undefined.
               </li>
-              <li>
-                In local and Session storage there is no transfer of data to the
-                server.
-              </li>
-            </ol>
+              <li>Accessing array elements outside of the index range.</li>
+              <li>Deleting an element inside an array.</li>
+              <li>Set a value directly to undefined.</li>
+            </ul>
           </div>
         </div>
       </section>
