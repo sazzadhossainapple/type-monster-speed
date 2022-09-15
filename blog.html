@@ -65,6 +65,22 @@
                 called a tick in the Event Loop. Each event is just a function
                 callback.
               </li>
+              <li>
+                An event loop is something that pulls stuff out of the queue and
+                places it onto the function execution stack whenever the
+                function stack becomes empty. The event loop is the secret by
+                which JavaScript gives us an illusion of being multithreaded
+                even though it is single-threaded. The callback function in the
+                event queue has not yet run and is waiting for its time into the
+                stack when the SetTimeOut() is being executed and the Web API is
+                making the mentioned wait. When the function stack becomes
+                empty, the function gets loaded onto it. That is where the event
+                loop comes into, it takes the first event from the Event Queue
+                and places it onto the stack i.e in this case the callback
+                function. From here, this function executes calling other
+                functions inside it, if any. This cycle is called the event loop
+                and this is how JavaScript manages its events.
+              </li>
             </ul>
           </div>
           <div class="card">
@@ -84,6 +100,10 @@
               <li>Accessing array elements outside of the index range.</li>
               <li>Deleting an element inside an array.</li>
               <li>Set a value directly to undefined.</li>
+              <p>
+                The global undefined property represents the primitive value
+                undefined. It is one of JavaScript's primitive types.
+              </p>
             </ul>
           </div>
         </div>
